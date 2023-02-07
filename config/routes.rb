@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get '/v3/health' => 'application#health'
   post '/v3/orders' => 'application#create_order'
+  post '/v3/orders/http-delay' => 'application#create_order_http_delay'
 end

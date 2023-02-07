@@ -1,5 +1,7 @@
-class ApplicationController < ActionController::Base
-  protect_from_forgery with: :null_session
+class ApplicationController < ActionController::API
+  # protect_from_forgery with: :null_session
+  # protect_from_forgery unless: -> { request.format.json? }
+
   def health
     render json: {}
   end
@@ -8,12 +10,22 @@ class ApplicationController < ActionController::Base
     order = params
     job = order_to_job(order);
     job_response = create_job(job);
+    # new_order = job_to_order(job_response)
+
+    render json: job_response
+  end
+
+  def create_order_http_delay
+    order = params
+    job = order_to_job(order);
+    job_response = create_job_dalay(job);
     new_order = job_to_order(job_response)
 
     render json: new_order
   end
 
   private
+
   def order_to_job(order)
     {
       job: {
@@ -36,7 +48,14 @@ class ApplicationController < ActionController::Base
     }
   end
 
-  def create_job(job: )
+  def create_job_dalay(payload)
+    delay = ENV.fetch('HTTP_DELAY_IN_SECONDS', 2)
+    HTTParty.get("https://httpbin.org/delay/#{delay}");
+    create_job(payload)
+  end
+
+  def create_job(payload)
+    job = payload[:job]
     dropoff = job[:dropoffs][0];
     pickup = job[:pickups][0];
 

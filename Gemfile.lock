@@ -74,6 +74,9 @@ GEM
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     loofah (2.19.1)
@@ -88,6 +91,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.17.0)
+    multi_xml (0.6.0)
     net-imap (0.3.4)
       date
       net-protocol
@@ -148,6 +152,7 @@ PLATFORMS
 
 DEPENDENCIES
   debug
+  httparty
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
   sqlite3 (~> 1.4)
