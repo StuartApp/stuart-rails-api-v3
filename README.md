@@ -8,6 +8,7 @@ Endpoints:
 GET http://localhost:3000/v3/health
 POST http://localhost:3000/v3/orders
 POST http://localhost:3000/v3/orders/http-delay
+POST http://localhost:3000/v3/orders/http-random-delay
 ```
 
 Environment:

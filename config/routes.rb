@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/v3/health' => 'application#health'
   post '/v3/orders' => 'application#create_order'
   post '/v3/orders/http-delay' => 'application#create_order_http_delay'
+  post '/v3/orders/http-random-delay' => 'application#create_order_http_random_delay'
 end

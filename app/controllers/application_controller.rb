@@ -24,6 +24,15 @@ class ApplicationController < ActionController::API
     render json: new_order
   end
 
+  def create_order_http_random_delay
+    order = params
+    job = order_to_job(order);
+    job_response = create_job_random_dalay(job);
+    new_order = job_to_order(job_response)
+
+    render json: new_order
+  end
+
   private
 
   def order_to_job(order)
@@ -46,6 +55,11 @@ class ApplicationController < ActionController::API
         ],
       },
     }
+  end
+
+  def create_job_random_dalay(payload)
+    HTTParty.get('https://dummy-api.beta.stuart-apps.solutions/api/foo/bar');
+    create_job(payload)
   end
 
   def create_job_dalay(payload)
