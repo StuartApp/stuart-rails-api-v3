@@ -58,11 +58,7 @@ class ApplicationController < ActionController::API
   end
 
   def create_job_random_dalay(payload)
-    begin
       HTTParty.get('https://dummy-api.beta.stuart-apps.solutions/api/foo/bar');
-    rescue
-      Rails.logger.error("[Error] https://dummy-api.beta.stuart-apps.solutions/api/foo/bar")
-    end
     create_job(payload)
   end
 
