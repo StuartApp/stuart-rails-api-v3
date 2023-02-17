@@ -1,0 +1,206 @@
+{
+  "id": 100432273,
+  "created_at": "2023-01-25T12:47:01.000+01:00",
+  "status": "in_progress",
+  "package_type": "small",
+  "transport_type": "bike",
+  "assignment_code": null,
+  "pickup_at": "2023-01-25T12:52:00.000+01:00",
+  "dropoff_at": null,
+  "ended_at": null,
+  "comment": null,
+  "distance": 2.44,
+  "duration": 10,
+  "traveled_time": 0,
+  "traveled_distance": 0,
+  "deliveries": [
+    {
+      "id": 100515659,
+      "status": "waiting_at_dropoff",
+      "picked_at": "2023-01-25T12:50:34.000+01:00",
+      "delivered_at": null,
+      "tracking_url": "https://stuart.sandbox.followmy.delivery/100515659/40101dbec89bda1a717cb166dc7721ae",
+      "client_reference": "299e107a-9225-4074-bf57-33375019777e",
+      "package_description": null,
+      "package_type": "small",
+      "fleet_ids": [
+        1
+      ],
+      "pickup": {
+        "id": 2598682,
+        "address": {
+          "street": "20 Rue Jean-Pierre Timbaud, 75011 Paris, Francia",
+          "postcode": "75011",
+          "city": "Paris",
+          "zone": "paris",
+          "country": "France",
+          "formatted_address": "20 Rue Jean-Pierre Timbaud, 75011 Paris, Francia"
+        },
+        "latitude": 48.8652819,
+        "longitude": 2.3686926,
+        "comment": null,
+        "contact": {
+          "firstname": null,
+          "lastname": null,
+          "phone": null,
+          "company_name": null,
+          "email": null
+        },
+        "access_codes": [
+          {
+            "code": "PU_access_code",
+            "type": "text",
+            "title": "access code title",
+            "instructions": "please put your instructions here"
+          }
+        ]
+      },
+      "dropoff": {
+        "id": 2598683,
+        "address": {
+          "street": "1 Av. Claude Vellefaux, 75010 Paris, Francia",
+          "postcode": "75010",
+          "city": "Paris",
+          "zone": "paris",
+          "country": "France",
+          "formatted_address": "1 Av. Claude Vellefaux, 75010 Paris, Francia"
+        },
+        "latitude": 48.8734002,
+        "longitude": 2.3697746,
+        "comment": null,
+        "contact": {
+          "firstname": null,
+          "lastname": null,
+          "phone": "+33666666666",
+          "company_name": null,
+          "email": null
+        },
+        "access_codes": [
+          {
+            "code": "DO_access_code_1",
+            "type": "text",
+            "title": "access code title",
+            "instructions": "please put your instructions here"
+          }
+        ]
+      },
+      "cancellation": {
+        "canceled_by": null,
+        "reason_key": null,
+        "comment": null
+      },
+      "eta": {
+        "pickup": "2023-01-25T12:50:32.000+01:00",
+        "dropoff": "2023-01-25T22:28:22.000+01:00"
+      },
+      "proof": {
+        "signature_url": null
+      },
+      "package_image_url": null,
+      "proof_of_delivery_url": null
+    },
+    {
+      "id": 100515660,
+      "status": "delivering",
+      "picked_at": "2023-01-25T12:50:26.000+01:00",
+      "delivered_at": null,
+      "tracking_url": "https://stuart.sandbox.followmy.delivery/100515660/6a88bc7824b634093ca731c80b2ac3a3",
+      "client_reference": "b5ac4aeb-c6dc-4fc1-9cde-05e5e067ccc7",
+      "package_description": null,
+      "package_type": "small",
+      "fleet_ids": [
+        1
+      ],
+      "pickup": {
+        "id": 2598684,
+        "address": {
+          "street": "20 Rue Jean-Pierre Timbaud, 75011 Paris, Francia",
+          "postcode": "75011",
+          "city": "Paris",
+          "zone": "paris",
+          "country": "France",
+          "formatted_address": "20 Rue Jean-Pierre Timbaud, 75011 Paris, Francia"
+        },
+        "latitude": 48.8652819,
+        "longitude": 2.3686926,
+        "comment": null,
+        "contact": {
+          "firstname": null,
+          "lastname": null,
+          "phone": null,
+          "company_name": null,
+          "email": null
+        },
+        "access_codes": [
+          {
+            "code": "PU_access_code",
+            "type": "text",
+            "title": "access code title",
+            "instructions": "please put your instructions here"
+          }
+        ]
+      },
+      "dropoff": {
+        "id": 2598685,
+        "address": {
+          "street": "5 Av. Claude Vellefaux, 75010 Paris, Francia",
+          "postcode": "75010",
+          "city": "Paris",
+          "zone": "paris",
+          "country": "France",
+          "formatted_address": "5 Av. Claude Vellefaux, 75010 Paris, Francia"
+        },
+        "latitude": 48.8745025,
+        "longitude": 2.3700951,
+        "comment": null,
+        "contact": {
+          "firstname": null,
+          "lastname": null,
+          "phone": "+33666666666",
+          "company_name": null,
+          "email": null
+        },
+        "access_codes": [
+          {
+            "code": "DO_access_code_2",
+            "type": "text",
+            "title": "access code title",
+            "instructions": "please put your instructions here"
+          }
+        ]
+      },
+      "cancellation": {
+        "canceled_by": null,
+        "reason_key": null,
+        "comment": null
+      },
+      "eta": {
+        "pickup": "2023-01-25T12:50:32.000+01:00",
+        "dropoff": "2023-01-25T22:30:19.000+01:00"
+      },
+      "proof": {
+        "signature_url": null
+      },
+      "package_image_url": null,
+      "proof_of_delivery_url": null
+    }
+  ],
+  "driver": {
+    "id": 67217,
+    "display_name": "Quentin J.",
+    "phone": "+33162232095",
+    "picture_url": null,
+    "transport_type": "bike",
+    "latitude": 48.87334824,
+    "longitude": 2.36999011
+  },
+  "pricing": {
+    "price_tax_included": 11.0,
+    "price_tax_excluded": 11.0,
+    "tax_amount": 0.0,
+    "invoice_url": null,
+    "tax_percentage": 0.2,
+    "currency": "EUR"
+  },
+  "rating": null
+}

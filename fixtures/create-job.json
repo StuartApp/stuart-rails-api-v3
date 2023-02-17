@@ -1,0 +1,15 @@
+{
+  "job": {
+    "pickups": [{
+      "address": "20 Rue Jean-Pierre Timbaud, 75011 Paris, Francia"
+    }],
+    "dropoffs": [{
+      "client_reference": "reference-1234",
+      "package_type": "small",
+      "address": "1 Av. Claude Vellefaux, 75010 Paris, Francia",
+      "contact": {
+        "contact_phone": "666666666"
+      }
+    }]
+  }
+}
