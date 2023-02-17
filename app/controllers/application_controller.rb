@@ -67,7 +67,7 @@ class ApplicationController < ActionController::API
   end
 
   def create_job_dalay(payload)
-    delay = ENV.fetch('HTTP_DELAY_IN_SECONDS', 2)
+    delay = ENV.fetch('HTTP_DELAY_IN_SECONDS', 1)
     HTTParty.get("https://httpbin.org/delay/#{delay}");
     create_job(payload)
   end
