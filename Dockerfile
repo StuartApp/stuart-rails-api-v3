@@ -12,6 +12,7 @@ ENV LANG=C.UTF-8 \
   BUNDLE_JOBS=4 \
   BUNDLE_RETRY=3 \
   RAILS_ENV=production \
+  SECRET_KEY_BASE=fake \
   RAILS_LOG_TO_STDOUT=true
 
 RUN gem update --system && gem install bundler
